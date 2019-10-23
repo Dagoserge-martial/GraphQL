@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row text-left">
+                <div v-for="item in data_all_ville" class="col-12 col-md-8 m-auto col-lg-4 pt-5 mb-4 pt-lg-0">
+                    <div class="fdb-box fdb-touch mt-4">
+                    <h2>${ item.node.name }</h2>
+                    <p>Far far away, behind the word mountains, far from the country Vokalia, there live the blind texts.</p>
+                    <p><a :href=`${base_url}`+`/employe/`+`${item.node.id}`>Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
